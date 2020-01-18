@@ -1,0 +1,31 @@
+<h1>Pages#answer</h1>
+
+<P>"Hello, I am your coach, what did you want to tell me?"</P>
+
+<%  answer = nil
+
+while answer != "" %>
+  <p>"> "</p>
+  <% message = gets.chomp
+  answer = coach_answer(your_message)
+  puts answer
+end %>
+
+<p>"Great, see ya!"</p>
+
+def coach_answer(your_message)
+  if your_message.downcase == "i am going to work right now!"
+    ""
+  elsif your_message.end_with?("?")
+    "Silly question, get dressed and go to work!"
+  else
+    "I don't care, get dressed and go to work!"
+  end
+end
+
+
+
+
+
+
+<p>Find me in app/views/pages/answer.html.erb</p>
